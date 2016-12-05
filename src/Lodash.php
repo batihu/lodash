@@ -15,6 +15,7 @@ class Lodash
             if ($item)
             $result [] = $item;
         }
+        sort($result);
 
         return $result;
     }
