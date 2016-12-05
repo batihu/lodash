@@ -8,4 +8,8 @@ class Lodash
     {
         return array_chunk($tomb, $oszto);
     }
+
+    public function compact()
+    {
+    }
 }
