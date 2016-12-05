@@ -13,4 +13,11 @@ class LodashTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals( [['a', 'b'], ['c', 'd']] , $l->chunk(['a', 'b', 'c', 'd'], 2));
         $this->assertEquals( [['a', 'b', 'c'], ['d']] , $l->chunk(['a', 'b', 'c', 'd'], 3));
     }
+
+
+    public function testCompact()
+    {
+        $l = new Lodash();
+        $l->compact([0, 1, false, 2, '', 3]);
+    }
 }
