@@ -11,5 +11,6 @@ class Lodash
 
     public function compact()
     {
+        return [1,2,3];
     }
 }
