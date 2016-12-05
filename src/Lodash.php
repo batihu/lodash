@@ -9,7 +9,7 @@ class Lodash
         return array_chunk($tomb, $oszto);
     }
 
-    public function compact()
+    public function compact(array $input)
     {
         return [1,2,3];
     }
