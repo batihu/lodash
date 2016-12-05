@@ -11,10 +11,7 @@ class Lodash
 
     public function compact(array $input)
     {
-        foreach ($input as $item) {
-            if ($item)
-            $result [] = $item;
-        }
+        $result = array_filter($input);
         sort($result);
 
         return $result;
