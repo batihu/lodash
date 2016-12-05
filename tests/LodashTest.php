@@ -18,6 +18,6 @@ class LodashTest extends \PHPUnit_Framework_TestCase
     public function testCompact()
     {
         $l = new Lodash();
-        $l->compact([0, 1, false, 2, '', 3]);
+        $this->assertEquals([1,2,3], $l->compact([0, 1, false, 2, '', 3]));
     }
 }
