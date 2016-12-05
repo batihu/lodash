@@ -20,10 +20,10 @@ class Lodash
     public function concat($i0, $i1 = null, $i2 = null, $i3 = null)
     {
         $result = [];
-        $result = $this->pusher($result, $i0);
-        $result = $this->pusher($result, $i1);
-        $result = $this->pusher($result, $i2);
-        $result = $this->pusher($result, $i3);
+        $args = func_get_args();
+        foreach ($args as $arg) {
+            $result = $this->pusher($result, $arg);
+        }
 
         return $result;
     }
