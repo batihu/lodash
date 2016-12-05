@@ -11,6 +11,11 @@ class Lodash
 
     public function compact(array $input)
     {
-        return [1,2,3];
+        foreach ($input as $item) {
+            if ($item)
+            $result [] = $item;
+        }
+
+        return $result;
     }
 }
