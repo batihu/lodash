@@ -30,7 +30,7 @@ class LodashTest extends \PHPUnit_Framework_TestCase
 
     public function testConcat()
     {
-        $this->lodash->concat();
+        $this->assertEquals([1, 2, 3, [4]], $this->lodash->concat([1], 2, [3], [[4]]));
 
     }
 }
