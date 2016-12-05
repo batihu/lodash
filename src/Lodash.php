@@ -16,4 +16,14 @@ class Lodash
 
         return $result;
     }
+
+    public function concat($i0, $i1 = null, $i2 = null, $i3 = null)
+    {
+        $result=[];
+        array_push($result, is_array($i0) ? reset($i0) : $i0);
+        array_push($result, is_array($i1) ? reset($i1) : $i1);
+        array_push($result, is_array($i2) ? reset($i2) : $i2);
+        array_push($result, is_array($i3) ? reset($i3) : $i3);
+        return $result;
+    }
 }
