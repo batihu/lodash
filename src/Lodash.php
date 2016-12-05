@@ -19,21 +19,19 @@ class Lodash
 
     public function concat($i0, $i1 = null, $i2 = null, $i3 = null)
     {
-        $result=[];
+        $result = [];
         $result = $this->pusher($result, $i0);
         $result = $this->pusher($result, $i1);
         $result = $this->pusher($result, $i2);
         $result = $this->pusher($result, $i3);
+
         return $result;
     }
 
-    /**
-     * @param $i0
-     * @return mixed
-     */
-    private function pusher($result,$i0)
+    private function pusher($result, $input)
     {
-        if ($i0) array_push($result, is_array($i0) ? reset($i0) : $i0);
+        if ($input) array_push($result, is_array($input) ? reset($input) : $input);
+
         return $result;
     }
 }
